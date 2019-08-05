@@ -14,6 +14,7 @@
 		AA72E8F722F4496C003E74ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA72E8F622F4496C003E74ED /* Preview Assets.xcassets */; };
 		AA72E8FA22F4496C003E74ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA72E8F822F4496C003E74ED /* LaunchScreen.storyboard */; };
 		AA72E90522F4496C003E74ED /* CARMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72E90422F4496C003E74ED /* CARMapsTests.swift */; };
+		AAC7200E22F44B6B009376BB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7200D22F44B6B009376BB /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		AA72E90022F4496C003E74ED /* CARMapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CARMapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA72E90422F4496C003E74ED /* CARMapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CARMapsTests.swift; sourceTree = "<group>"; };
 		AA72E90622F4496C003E74ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC7200D22F44B6B009376BB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				AA72E8F822F4496C003E74ED /* LaunchScreen.storyboard */,
 				AA72E8FB22F4496C003E74ED /* Info.plist */,
 				AA72E8F522F4496C003E74ED /* Preview Content */,
+				AAC7200D22F44B6B009376BB /* MapView.swift */,
 			);
 			path = CARMaps;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA72E8EE22F44967003E74ED /* AppDelegate.swift in Sources */,
+				AAC7200E22F44B6B009376BB /* MapView.swift in Sources */,
 				AA72E8F022F44967003E74ED /* SceneDelegate.swift in Sources */,
 				AA72E8F222F44967003E74ED /* ContentView.swift in Sources */,
 			);
