@@ -1,12 +1,12 @@
-{
-    "markers": [
+[
     {
         "id": 12345,
         "name": "The Shaftesbury Theatre",
         "coordinates": {
             "longitude": 51.517199,
             "latitude": -0.125702
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 12346,
@@ -14,7 +14,8 @@
         "coordinates": {
             "longitude": 51.517851,
             "latitude": -0.096613
-        }
+        },
+        "imageName": "silversalmoncreek"
     },
     {
         "id": 12347,
@@ -22,7 +23,8 @@
         "coordinates": {
             "longitude": 51.515622,
             "latitude": -0.092559
-        }
+        },
+        "imageName": "chilkoottrail"
     },
     {
         "id": 1,
@@ -30,7 +32,8 @@
         "coordinates": {
             "longitude": 41.403831,
             "latitude": 2.174399
-        }
+        },
+        "imageName": "stmarylake"
     },
     {
         "id": 2,
@@ -38,7 +41,8 @@
         "coordinates": {
             "longitude": 41.414465,
             "latitude": 2.153044
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 3,
@@ -46,7 +50,8 @@
         "coordinates": {
             "longitude": 41.404713,
             "latitude": 2.156921
-        }
+        },
+        "imageName": "twinlake"
     },
     {
         "id": 4,
@@ -54,7 +59,8 @@
         "coordinates": {
             "longitude": 41.409991,
             "latitude": 2.136940
-        }
+        },
+        "imageName": "lakemcdonald"
     },
     {
         "id": 5,
@@ -62,7 +68,8 @@
         "coordinates": {
             "longitude": 41.398215,
             "latitude": 2.111951
-        }
+        },
+        "imageName": "yukon_charleyrivers"
     },
     {
         "id": 6,
@@ -70,7 +77,8 @@
         "coordinates": {
             "longitude": 41.387219,
             "latitude": 2.170041
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 7,
@@ -78,7 +86,8 @@
         "coordinates": {
             "longitude": 41.390128,
             "latitude": 2.135641
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 8,
@@ -86,7 +95,8 @@
         "coordinates": {
             "longitude": 41.389884,
             "latitude": 2.132114
-        }
+        },
+         "imageName": "turtlerock"
     },
     {
         "id": 9,
@@ -94,7 +104,8 @@
         "coordinates": {
             "longitude": 41.388942,
             "latitude": 2.131438
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 10,
@@ -102,7 +113,8 @@
         "coordinates": {
             "longitude": 41.405887,
             "latitude": 2.191378
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 11,
@@ -110,15 +122,17 @@
         "coordinates": {
             "longitude": 41.411989,
             "latitude": 2.192907
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 12,
         "name": "Parc del Clot",
         "coordinates": {
-            "longitude": 41.4079019
+            "longitude": 41.4079019,
             "latitude": 2.190064
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 13,
@@ -126,7 +140,8 @@
         "coordinates": {
             "longitude": 41.400690,
             "latitude": 2.191319
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 14,
@@ -134,7 +149,8 @@
         "coordinates": {
             "longitude": 41.400841,
             "latitude": 2.190799
-        }
+        },
+        "imageName": "turtlerock"
     },
     {
         "id": 15,
@@ -142,9 +158,8 @@
         "coordinates": {
             "longitude": 41.401204,
             "latitude": 2.191227
-        }
+        },
+        "imageName": "turtlerock"
     }
-  ]
-}
-
-
+]
+ 
