@@ -10,10 +10,8 @@ import SwiftUI
 
 struct LandmarkListView: View {
     
-
     var body: some View {
- 
-        List(landmarkData) { (landmark) -> LandmarkRow in
+        List(landmarkData) { landmark in
             LandmarkRow(landmark: landmark)
         }
     }
