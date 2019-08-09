@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA195F6B22FD649B00E388F7 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA195F6A22FD649B00E388F7 /* ARView.swift */; };
 		AA33B49A22F984D4008A122A /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33B49922F984D4008A122A /* LandmarkRow.swift */; };
 		AA33B49C22F987BB008A122A /* LandmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33B49B22F987BB008A122A /* LandmarkListView.swift */; };
 		AA33B4A922F99E40008A122A /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA33B49D22F99E3F008A122A /* silversalmoncreek.jpg */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA195F6A22FD649B00E388F7 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		AA33B49922F984D4008A122A /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		AA33B49B22F987BB008A122A /* LandmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkListView.swift; sourceTree = "<group>"; };
 		AA33B49D22F99E3F008A122A /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				AA72E8F122F44967003E74ED /* ContentView.swift */,
 				AAC7200D22F44B6B009376BB /* MapView.swift */,
 				AA33B49B22F987BB008A122A /* LandmarkListView.swift */,
+				AA195F6A22FD649B00E388F7 /* ARView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				AA33B49C22F987BB008A122A /* LandmarkListView.swift in Sources */,
 				AA72E8F022F44967003E74ED /* SceneDelegate.swift in Sources */,
 				AA72E8F222F44967003E74ED /* ContentView.swift in Sources */,
+				AA195F6B22FD649B00E388F7 /* ARView.swift in Sources */,
 				AAAEEA2822F838FD0038862C /* Landmark.swift in Sources */,
 				AAAEEA2A22F838FD0038862C /* CircleImage.swift in Sources */,
 				AAAEEA3122F850300038862C /* MarkersResponseModel.swift in Sources */,
