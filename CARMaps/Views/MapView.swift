@@ -5,7 +5,9 @@
 //  Created by Cristina Saura Pérez on 02/08/2019.
 //  Copyright © 2019 everis. All rights reserved.
 //  https://www.morningswiftui.com/blog/build-mapview-app-with-swiftui
-// https://stackoverflow.com/questions/56563660/accessing-mkmapview-elements-as-uiviewrepresentable-in-the-main-contentview-sw
+//  https://github.com/hulab/ClusterKit/issues/7
+//  https://stackoverflow.com/questions/56563660/
+//  accessing-mkmapview-elements-as-uiviewrepresentable-in-the-main-contentview-sw
 
 import SwiftUI
 import MapKit
@@ -21,7 +23,7 @@ struct MapView: UIViewRepresentable {
     let regionInMeters: Double = 10000
     let locationManager = CLLocationManager()
     var landmarks: [Landmark] = []
-    //@Binding var selectedLandmark: Landmark? //TODO
+    //@Binding var selectedLandmark: Landmark? //TODO CRIS
     
     func makeUIView(context: Context) -> MKMapView {
         let view = MKMapView(frame: .zero)
@@ -56,20 +58,26 @@ struct MapView: UIViewRepresentable {
     }
     
     func centerViewOnUserLocation(mapView: MKMapView) {
+        
         #if targetEnvironment(simulator)
         // TODO harcoded to work with Simulator (if not harcoded, we are in California)
         let location = CLLocationCoordinate2DMake(41.397272, 2.159148)
-        let region = MKCoordinateRegion(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        let region = MKCoordinateRegion(center: location,
+                                        latitudinalMeters: regionInMeters,
+                                        longitudinalMeters: regionInMeters)
         mapView.setRegion(region, animated: true)
+        
         #else
         if let location = locationManager.location?.coordinate {
-            let region = MKCoordinateRegion(center : location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+            let region = MKCoordinateRegion(center : location,
+                                            latitudinalMeters: regionInMeters,
+                                            longitudinalMeters: regionInMeters)
             mapView.setRegion(region, animated: true)
         }
         #endif
     }
     
-    //TODO
+    //TODO CRIS
     //    private func updateAnnotations(from mapView: MKMapView) {
     //        mapView.removeAnnotations(mapView.annotations)
     //        let newAnnotations = landmarks.map { LandmarkAnnotation(landmark: $0) }
@@ -86,10 +94,8 @@ struct MapView: UIViewRepresentable {
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
             let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier, for: annotation)
             annotationView.clusteringIdentifier = "identifier"
-            print("+++++++++++++++++++++++++++++++++++++++++++")
             print(mapView.visibleAnnotations())
             return annotationView
-            // https://github.com/hulab/ClusterKit/issues/7
         }
         
         func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
@@ -97,52 +103,26 @@ struct MapView: UIViewRepresentable {
             LandmarkListView()
             //TODO present a view
         }
-        
-        
-        //this function shows ALL the annotations, without clustering, cause clustering is done by default in iOS
-//        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "reuseIdentifier") as? MKMarkerAnnotationView
-//            if annotationView == nil {
-//                annotationView = MKMarkerAnnotationView(annotation: nil, reuseIdentifier: "reuseIdentifier")
-//            }
-//            annotationView?.annotation = annotation
-//            annotationView?.displayPriority = .required
-//            return annotationView
-//        }
-        
-        func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-            
-        }
-//        @Binding var selectedPin: LandmarkAnnotation?
-//
-//        init(selectedPin: Binding<LandmarkAnnotation?>) {
-//            $selectedPin = selectedPin
-//        }
-//
-//        func mapView(_ mapView: MKMapView,
-//                     didSelect view: MKAnnotationView) {
-//            guard let pin = view.annotation as? LandmarkAnnotation else {
-//                return
-//            }
-//            pin.action?()
-//            selectedPin = pin
-//        }
-//
-//        func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
-//            guard (view.annotation as? LandmarkAnnotation) != nil else {
-//                return
-//            }
-//            selectedPin = nil
-//        }
-
     }
-    
-    //@Binding var pins: [LandmarkAnnotation]
-    //@Binding var outSelectedPin: LandmarkAnnotation?
     
     func makeCoordinator() -> MapView.Coordinator {
          return Coordinator()
     }
+    
+// this function shows ALL the annotations, without clustering, cause clustering is done by default in iOS
+// func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+// var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "reuseIdentifier")
+// as? MKMarkerAnnotationView
+// if annotationView == nil {
+// annotationView = MKMarkerAnnotationView(annotation: nil, reuseIdentifier: "reuseIdentifier")
+// }
+// annotationView?.annotation = annotation
+// annotationView?.displayPriority = .required
+// return annotationView
+// }
+
+//@Binding var pins: [LandmarkAnnotation]
+//@Binding var outSelectedPin: LandmarkAnnotation?
 }
 
 
@@ -162,8 +142,6 @@ class LandmarkAnnotation: NSObject, MKAnnotation {
 }
 
 //struct MapView_Preview: PreviewProvider {
-//
-//    
 //    static var previews: some View {
 //        MapView()
 //    }
