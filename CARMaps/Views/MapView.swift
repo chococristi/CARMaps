@@ -86,11 +86,16 @@ struct MapView: UIViewRepresentable {
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
             let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier, for: annotation)
             annotationView.clusteringIdentifier = "identifier"
-            print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+            print("+++++++++++++++++++++++++++++++++++++++++++")
             print(mapView.visibleAnnotations())
             return annotationView
             // https://github.com/hulab/ClusterKit/issues/7
-            
+        }
+        
+        func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+            print("selected annotation: \(view.annotation?.title)")
+            LandmarkListView()
+            //TODO present a view
         }
         
         
