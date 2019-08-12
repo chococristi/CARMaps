@@ -6,7 +6,8 @@
             "latitude": 51.517199,
             "longitude": -0.125702
         },
-        "imageName": "turtlerock"
+        "imageName": "turtlerock",
+        "isFavorite": false
     },
     {
         "id": 12346,
@@ -15,7 +16,8 @@
             "latitude": 51.517851,
             "longitude": -0.096613
         },
-        "imageName": "silversalmoncreek"
+        "imageName": "silversalmoncreek",
+        "isFavorite": false
     },
     {
         "id": 12347,
@@ -24,7 +26,8 @@
             "latitude": 51.515622,
             "longitude": -0.092559
         },
-        "imageName": "chilkoottrail"
+        "imageName": "chilkoottrail",
+        "isFavorite": false
     },
     {
         "id": 1,
@@ -33,7 +36,8 @@
             "latitude": 41.403831,
             "longitude": 2.174399
         },
-        "imageName": "stmarylake"
+        "imageName": "stmarylake",
+        "isFavorite": false
     },
     {
         "id": 2,
@@ -42,7 +46,8 @@
             "latitude": 41.414465,
             "longitude": 2.153044
         },
-        "imageName": "turtlerock"
+        "imageName": "turtlerock",
+        "isFavorite": false
     },
     {
         "id": 3,
@@ -51,7 +56,8 @@
             "latitude": 41.404713,
             "longitude": 2.156921
         },
-        "imageName": "twinlake"
+        "imageName": "twinlake",
+        "isFavorite": false
     },
     {
         "id": 4,
@@ -60,7 +66,8 @@
             "latitude": 41.409991,
             "longitude": 2.136940
         },
-        "imageName": "lakemcdonald"
+        "imageName": "lakemcdonald",
+        "isFavorite": false
     },
     {
         "id": 5,
@@ -69,7 +76,8 @@
             "latitude": 41.398215,
             "longitude": 2.111951
         },
-        "imageName": "yukon_charleyrivers"
+        "imageName": "yukon_charleyrivers",
+        "isFavorite": false
     },
     {
         "id": 6,
@@ -78,7 +86,8 @@
             "latitude": 41.387219,
             "longitude": 2.170041
         },
-        "imageName": "turtlerock"
+        "imageName": "turtlerock",
+        "isFavorite": false
     },
     {
         "id": 7,
@@ -87,7 +96,8 @@
             "latitude": 41.390128,
             "longitude": 2.135641
         },
-        "imageName": "icybay"
+        "imageName": "icybay",
+        "isFavorite": false
     },
     {
         "id": 8,
@@ -96,7 +106,8 @@
             "latitude": 41.389884,
             "longitude": 2.132114
         },
-         "imageName": "turtlerock"
+         "imageName": "turtlerock",
+         "isFavorite": false
     },
     {
         "id": 9,
@@ -105,7 +116,8 @@
             "latitude": 41.388942,
             "longitude": 2.131438
         },
-        "imageName": "rainbowlake"
+        "imageName": "rainbowlake",
+        "isFavorite": false
     },
     {
         "id": 10,
@@ -114,7 +126,8 @@
             "latitude": 41.405887,
             "longitude": 2.191378
         },
-        "imageName": "hiddenlake"
+        "imageName": "hiddenlake",
+        "isFavorite": false
     },
     {
         "id": 11,
@@ -123,7 +136,8 @@
             "latitude": 41.411989,
             "longitude": 2.192907
         },
-        "imageName": "chincoteague"
+        "imageName": "chincoteague",
+        "isFavorite": false
     },
     {
         "id": 12,
@@ -132,7 +146,8 @@
             "latitude": 41.4079019,
             "longitude": 2.190064
         },
-        "imageName": "turtlerock"
+        "imageName": "turtlerock",
+        "isFavorite": false
     },
     {
         "id": 13,
@@ -141,7 +156,8 @@
             "latitude": 41.400690,
             "longitude": 2.191319
         },
-        "imageName": "umbagog"
+        "imageName": "umbagog",
+        "isFavorite": false
     },
     {
         "id": 14,
@@ -150,7 +166,8 @@
             "latitude": 41.400841,
             "longitude": 2.190799
         },
-        "imageName": "stmarylake"
+        "imageName": "stmarylake",
+        "isFavorite": false
     },
     {
         "id": 15,
@@ -159,7 +176,8 @@
             "latitude": 41.401204,
             "longitude": 2.191227
         },
-        "imageName": "yukon_charleyrivers"
+        "imageName": "yukon_charleyrivers",
+        "isFavorite": false
     }
 ]
  

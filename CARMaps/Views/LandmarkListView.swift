@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct LandmarkListView: View {
+   @EnvironmentObject var userData: UserData
     
     var body: some View {
-        List(landmarkData) { landmark in
-            LandmarkRow(landmark: landmark)
+        List(userData.landmarks) { landmark in
+            //if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                LandmarkRow(landmark: landmark)
+            //}
         }
     }
 }

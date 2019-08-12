@@ -12,6 +12,8 @@ struct ContentView: View {
     @State var showingProfile = false
     @State var showingAR = false
     @State var landmarks: [Landmark] = load("landmarkData.json")
+    @EnvironmentObject private var userData: UserData
+
     
     let buttonSize: CGFloat = 28
     //@State var selectedLandmark: Landmark? = nil TODO
@@ -51,7 +53,7 @@ struct ContentView: View {
                 .padding(EdgeInsets.init(top: -(UIScreen.main.bounds.height/2)+50, leading: 0, bottom: 0, trailing: -(UIScreen.main.bounds.width)/2))
                 .offset(x: +120)
                 .sheet(isPresented: $showingProfile, content: {
-                    LandmarkListView()
+                    LandmarkListView().environmentObject(self.userData)
                 })
         
             realityButton
