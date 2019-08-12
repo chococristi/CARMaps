@@ -33,6 +33,7 @@
 		AAAEEA2922F838FD0038862C /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = AAAEEA2622F838FD0038862C /* landmarkData.json */; };
 		AAAEEA2A22F838FD0038862C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEA2722F838FD0038862C /* CircleImage.swift */; };
 		AAAEEA3122F850300038862C /* MarkersResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEA3022F850300038862C /* MarkersResponseModel.swift */; };
+		AABDD17423014DEE00406EDF /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABDD17323014DEE00406EDF /* UserData.swift */; };
 		AAC7200E22F44B6B009376BB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7200D22F44B6B009376BB /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		AAAEEA2622F838FD0038862C /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		AAAEEA2722F838FD0038862C /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		AAAEEA3022F850300038862C /* MarkersResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersResponseModel.swift; sourceTree = "<group>"; };
+		AABDD17323014DEE00406EDF /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		AAC7200D22F44B6B009376BB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 		AAAEEA2322F838FD0038862C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AABDD17323014DEE00406EDF /* UserData.swift */,
 				AAAEEA2422F838FD0038862C /* Landmark.swift */,
 				AAAEEA3022F850300038862C /* MarkersResponseModel.swift */,
 			);
@@ -318,6 +321,7 @@
 				AA33B49C22F987BB008A122A /* LandmarkListView.swift in Sources */,
 				AA72E8F022F44967003E74ED /* SceneDelegate.swift in Sources */,
 				AA72E8F222F44967003E74ED /* ContentView.swift in Sources */,
+				AABDD17423014DEE00406EDF /* UserData.swift in Sources */,
 				AA195F6B22FD649B00E388F7 /* ARView.swift in Sources */,
 				AAAEEA2822F838FD0038862C /* Landmark.swift in Sources */,
 				AAAEEA2A22F838FD0038862C /* CircleImage.swift in Sources */,
