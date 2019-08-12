@@ -17,6 +17,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var imageName: String
     var coordinates: Coordinates
     var isFavorite: Bool
+    var type: String
 
     
     var locationCoordinate: CLLocationCoordinate2D

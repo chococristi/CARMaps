@@ -92,15 +92,47 @@ struct MapView: UIViewRepresentable {
         
         //this function allows to SHOW THE NUMBER OF CLUSTER annotations
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier, for: annotation)
-            annotationView.clusteringIdentifier = "identifier"
-            print(mapView.visibleAnnotations())
-            return annotationView
+//            let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier, for: annotation)
+//            annotationView.clusteringIdentifier = "identifier"
+//            print(mapView.visibleAnnotations())
+//            return annotationView
+            mapView.register(UnicycleAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+                   mapView.register(BicycleAnnotationView.self,  forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+            //DOESNT WORK
+            //mapView.register(ClusterAnnotationView.self,  forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
+               
+            
+            guard let annotation = annotation as? LandmarkAnnotation else { return nil }
+
+            switch annotation.type {
+            case .unicycle:
+                return UnicycleAnnotationView(annotation: annotation, reuseIdentifier: UnicycleAnnotationView.ReuseID)
+            case .bicycle:
+                return BicycleAnnotationView(annotation: annotation, reuseIdentifier: BicycleAnnotationView.ReuseID)
+            }
         }
         
         func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+            print("+++++++++++++++++++++++++++++++++++++++++++++++")
             print("selected annotation: \(view.annotation?.title)")
-            LandmarkListView()
+            guard let selectedAnnotation = view.annotation else { return }
+            for annotation in mapView.annotations(in: mapView.visibleMapRect) {
+                if let clusterAnnotation = annotation as? MKClusterAnnotation
+                {
+                    print("hay clusters")
+                    if clusterAnnotation.memberAnnotations.first === selectedAnnotation {
+                        print("click en cluster")
+                    }
+//                    for annotation in clusterAnnotation.memberAnnotations {
+//                        if annotation === selectedAnnotation {
+//                            print("deseleccionada la cluster")
+//                            mapView.deselectAnnotation(selectedAnnotation, animated: true)
+//                        }
+//                    }
+                }
+            }
+            print("selected annotation: \(view.annotation?.title)")
+            //LandmarkListView()
             //TODO present a view
         }
     }
@@ -126,23 +158,23 @@ struct MapView: UIViewRepresentable {
 }
 
 
-class LandmarkAnnotation: NSObject, MKAnnotation {
-    
-    let id: Int
-    let title: String?
-    let coordinate: CLLocationCoordinate2D
-    let action: (() -> Void)?
-    
-    init(landmark: Landmark, action: (() -> Void)? = nil) {
-        self.id = landmark.id
-        self.title = landmark.name
-        self.coordinate = landmark.locationCoordinate
-        self.action = action
+
+struct MapView_Preview: PreviewProvider {
+    static var previews: some View {
+        MapView(landmarks:
+            [Landmark.init(id: 1,
+                           name: "prueba1",
+                           imageName: "turtlerock",
+                           coordinates: Coordinates(latitude: 41.400841,
+                           longitude: 2.190799),
+                           isFavorite: false,
+                           type: "bicycle"),
+            Landmark.init(id: 2,
+                           name: "prueba2",
+                           imageName: "turtlerock",
+                           coordinates: Coordinates(latitude: 41.400690,
+                           longitude: 2.191319),
+                           isFavorite: false,
+                           type: "unicycle")])
     }
 }
-
-//struct MapView_Preview: PreviewProvider {
-//    static var previews: some View {
-//        MapView()
-//    }
-//}

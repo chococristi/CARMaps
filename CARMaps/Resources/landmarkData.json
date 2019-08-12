@@ -7,7 +7,8 @@
             "longitude": -0.125702
         },
         "imageName": "turtlerock",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 12346,
@@ -17,7 +18,8 @@
             "longitude": -0.096613
         },
         "imageName": "silversalmoncreek",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "bicycle"
     },
     {
         "id": 12347,
@@ -27,7 +29,8 @@
             "longitude": -0.092559
         },
         "imageName": "chilkoottrail",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 1,
@@ -37,7 +40,8 @@
             "longitude": 2.174399
         },
         "imageName": "stmarylake",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 2,
@@ -47,7 +51,8 @@
             "longitude": 2.153044
         },
         "imageName": "turtlerock",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "bicycle"
     },
     {
         "id": 3,
@@ -57,7 +62,8 @@
             "longitude": 2.156921
         },
         "imageName": "twinlake",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "bicycle"
     },
     {
         "id": 4,
@@ -67,7 +73,8 @@
             "longitude": 2.136940
         },
         "imageName": "lakemcdonald",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 5,
@@ -77,7 +84,8 @@
             "longitude": 2.111951
         },
         "imageName": "yukon_charleyrivers",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 6,
@@ -87,7 +95,8 @@
             "longitude": 2.170041
         },
         "imageName": "turtlerock",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "bicycle"
     },
     {
         "id": 7,
@@ -97,7 +106,8 @@
             "longitude": 2.135641
         },
         "imageName": "icybay",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 8,
@@ -107,7 +117,8 @@
             "longitude": 2.132114
         },
          "imageName": "turtlerock",
-         "isFavorite": false
+         "isFavorite": false,
+         "type": "bicycle"
     },
     {
         "id": 9,
@@ -117,7 +128,8 @@
             "longitude": 2.131438
         },
         "imageName": "rainbowlake",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "bicycle"
     },
     {
         "id": 10,
@@ -127,7 +139,8 @@
             "longitude": 2.191378
         },
         "imageName": "hiddenlake",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 11,
@@ -137,7 +150,8 @@
             "longitude": 2.192907
         },
         "imageName": "chincoteague",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "bicycle"
     },
     {
         "id": 12,
@@ -147,7 +161,8 @@
             "longitude": 2.190064
         },
         "imageName": "turtlerock",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 13,
@@ -157,7 +172,8 @@
             "longitude": 2.191319
         },
         "imageName": "umbagog",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "bicycle"
     },
     {
         "id": 14,
@@ -167,7 +183,8 @@
             "longitude": 2.190799
         },
         "imageName": "stmarylake",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     },
     {
         "id": 15,
@@ -177,7 +194,8 @@
             "longitude": 2.191227
         },
         "imageName": "yukon_charleyrivers",
-        "isFavorite": false
+        "isFavorite": false,
+        "type": "unicycle"
     }
 ]
  
